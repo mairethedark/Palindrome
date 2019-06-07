@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Palindrome
+{
+    class Program
+    {
+        static void Main(String[] args)
+        {
+            string str;
+            int i, j, flag = 1;
+
+            Console.WriteLine("Please enter a word.");
+            str = Console.ReadLine();
+
+            for (i = 0, j = str.Length - 1; i != j; i++, j--)
+            {
+                if (str[i] == str[j])
+                {
+
+                }
+
+                else
+                {
+                    flag = 0;
+                }
+            }
+
+            if (flag == 1)
+            {
+                Console.WriteLine("The word is a Palindrome!");
+            }
+
+            else
+            {
+                Console.WriteLine("The word is not a Palindrome!");
+            }
+            Console.ReadLine();
+        }
+    }
+}
